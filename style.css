@@ -1,0 +1,622 @@
+
+:root{
+    --font1:'Open Sans', sans-serif;
+    --font2: 'Courgette', cursive;
+}
+
+h1,h2,h3{
+	font-family: var(--font1);
+	color:  #173b6c;
+}
+
+            /*========================
+               THIS IS CUSTOM MEDIA QUERY
+                ========================*/
+@media(min-width:992px){
+    #title{
+        font-size: 50px
+    }
+	#typed-title{
+	font-size: 50px		
+	}
+	.type{
+        font-size: 32px
+    }
+	.bg-overly{
+  height: 500px;
+}
+	.banner-wrap{
+		padding-top: 100px
+	}
+}
+
+@media(min-width:1200px){
+    #title{
+        font-size:60px; 
+    }
+	.bg-overly{
+  height: 600px;
+}
+	.banner-wrap{
+		padding-top: 150px
+	}
+}
+
+@media(max-width:992px){
+	.bg-overly{
+  height: 400px;
+}
+	.banner-wrap{
+		padding-top: 50px
+	}
+	.provid-title{
+		text-align: justify
+	}
+}
+
+@media(max-width:768px){
+  #title{
+        font-size: 2px;
+    } 
+	#typed-title{
+	font-size: 35px		
+	}
+    .type{
+        font-size: 16px
+    }
+    #banner{
+        background-position: right;
+    }
+	.faq-title{
+	font-size: 30px	
+	} 
+	.bg-overly{
+  height: 350px;
+}	
+	.banner-wrap{
+		padding-top:40px
+	}
+	
+}
+
+@media(max-width:576px){
+#typed-title{
+	font-size: 25px		
+	}
+	#typer{
+		font-size: 14px
+	}
+	.banner-wrap{
+		padding-top: 40px
+	}
+	.card-link{
+		text-align: center
+	}
+	.clint-title{
+		font-size: 20px
+	}
+	.clint-head{
+		font-size: 45px
+	}
+}
+ 				/*========================
+                   END MEDIA QUERY
+                ========================*/
+
+            /*========================
+                  HEADER SECTION
+                ========================*/
+
+.navbar{
+   background: #e91e63; 
+     -webkit-box-shadow: 0px 0px 5px 2px #173b6ca3; 
+             box-shadow: 0px 0px 5px 2px #173b6ca3;
+}
+.nav-link{
+margin-right: 15px;
+   
+}
+.navbar-dark .navbar-toggler{
+	border: 2px solid white;
+}
+#nav-link{
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size:20p;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+#nav-link:hover{
+   color:#173b6c;
+}
+.navbar-brand{
+	font-style: italic;
+	font-weight: 700
+}
+
+                      /*========================
+                          END HEADER SECTION
+                        ========================*/
+
+           /*========================
+                 BANNER SECTION
+             ========================*/
+#banner{
+	background-image: url(Picter/hero-bg.jpg);
+	 background-size: cover;
+    width: 100%;
+	
+   	background-attachment: fixed;
+}
+.bg-overly{
+	background: rgba(0,0,0,.6);
+}
+#typed-title{
+  font-family: var(--font1);  
+	color: white
+}
+.type::before{
+    content: "I'm ";
+}
+.typed{
+	color:#ff0056;
+}
+
+#typed-content{
+    margin-top: 70px!important; 
+}
+h1{
+    font-family: var(--font1);
+}
+
+                            /*========================
+                                END BANNER SECTION
+                             ========================*/
+
+           /*========================
+                ABOUT SECTION
+             ========================*/
+.fas{
+    color: #e91e63;
+    font-size: 20px;
+    margin-right: 8px
+}
+.title{
+    font-family: var(--font1);
+    color: #173b6c;  
+}
+.title2{
+    font-family: var(--font1);
+    color: #173b6c; 
+}
+
+               /*========================
+                    END ABOUT SECTION
+                ========================*/
+
+		/*========================
+                SKILLS SECTION
+           ========================*/
+#skill-section{
+    -webkit-box-shadow: 5px 0 20px rgba(0,0,0,0.1);
+            box-shadow: 5px 0 20px rgba(0,0,0,0.1);
+}
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:15px;
+    width:100%;
+    background:#adb5bd;  /* It's backend color */
+    height:10px;
+    border-radius:30px;
+    -webkit-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+}
+.skillbar-bar {
+height:10px;
+width:0px;
+          /* It's fonted color */
+background:#ff2c2c;
+border-radius:30px;
+float: left;
+}
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:15px;
+    height:10px;
+    line-height:50px;
+    color: #173b6c ;    /* It's parcent color */
+    font-weight: bold
+}  
+.skill-icon{
+    margin-top: 25px;
+    margin-left: 60px
+}
+		  			 /*========================
+             			   END SKILLS SECTION
+            		 ========================*/			
+
+			/*========================
+             	 FAQ SECTION
+             ========================*/	
+
+#faq-section{
+     background:#173b6c;
+}
+.fa-cogs,.fa-layer-group,.fa-chart-line{
+	color: #173b6c;
+}
+.down{
+	float:right;
+	color: white;
+}
+
+.animate-img{
+    -webkit-animation-name:anim ;
+            animation-name:anim ;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function:ease-in-out;
+            animation-timing-function:ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes anim{
+  50%{
+        margin-top: 25px;
+    }
+    100%{
+        margin-bottom:25px;
+    }
+}
+@keyframes anim{
+  50%{
+        margin-top: 25px;
+    }
+    100%{
+        margin-bottom:25px;
+    }
+}
+
+.box{
+    height: 425px;
+}
+.faq-check{
+	font-size: 24px
+}
+li{
+	list-style: none;
+}
+.text-muted{
+	font-family: fantasy
+}
+
+#faq-section .accordion .card{
+	border: none;
+}
+.accordion{
+	 -webkit-box-shadow: 0px 0px 4px 3px #e91e63;
+	         box-shadow: 0px 0px 4px 3px #e91e63;
+}
+.faq-btn{
+  margin: 0;
+    padding: 10px;
+    color: white;
+	font-family: var(--font1)
+}
+.faq-btn:hover{
+    color: white
+}
+.checkup{
+	color: #e91e63;
+	font-size: 22px
+}
+.card-header{
+    background: rgb(10, 10, 10);
+}
+					/*========================
+             			 END FAQ SECTION
+         			 ========================*/	
+
+			/*========================
+              SERVICES & PROVID SECTION
+          	========================*/
+#servics{
+	background-image: url(Picter/intro-bg.jpg);
+	background-size: cover
+}
+
+.servic-faq{
+	font-family: initial;
+}
+.servic-title::before{
+	content: "";
+	background:url("Picter/Laptop.png");
+	display: block;
+	
+}
+
+.kind-hover:hover{
+	background: #173b6c;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	cursor: pointer;
+	
+}
+.kind-hover:hover .kind-icon{
+	color: white
+}
+.kind-hover:hover .kind-title{
+	color: white
+}
+.kind-hover:hover .provid-title{
+	color: white
+}
+				/*========================
+             		CLIENT SECTION
+          		========================*/
+#client-area{
+background:#173b6c;	
+}
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: white;
+  stroke-dashoffset: 219.91148575129; 
+  stroke-width: 6;
+}
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+
+svg.radial-progress text {
+  fill: white;
+	font-weight: bold;
+  text-anchor: middle;
+}
+
+svg.radial-progress {
+  height: auto;
+  max-width: 200px;
+  padding: 1em;
+  -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+  width: 100%;
+}
+
+
+ 				/*========================
+             	  END	CLIENT SECTION
+          		========================*/
+		/*========================
+            SLIDER SECTION
+          ========================*/
+
+.card{
+    -webkit-box-shadow:0px 0 25px 0 rgba(0, 0, 0, 0.1);
+            box-shadow:0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+}
+.card:hover{
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+#slider .owl-carousel .item{
+	margin-bottom: 10px;
+}
+.card-body{
+    border:1px solid white
+}
+.card-link>a>i{
+		color: white;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 50%;
+    background:  #173b6c;
+		-webkit-transition: .2s;
+		-o-transition: .2s;
+		transition: .2s;
+	margin: 5px;
+	}
+	.card-link>a>i:hover{
+		background:#e91e63
+	}
+	.card-link>a>.fa-facebook-f{
+		padding:11px 13px!important;
+		
+	}
+
+/*----------------------------
+			# Preloader
+-------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background:#3c3c3c;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #37517e;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+			/*========================
+          		MIXITOP SECTION
+          	========================*/
+
+.mix{
+ 	width: 300px;
+    padding: 3px;
+    border: 2px solid #e91e63;
+    border-radius: 8px;
+    margin: 6px;
+}
+.isotop > button{
+	color: white;
+	background:#173b6c;
+	border: none;
+	outline: none;
+	padding: 8px 15px;
+	font-weight: 500
+	
+}
+
+.content{
+  position: relative;
+}
+.middle {
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.content:hover .text{
+  background:black;
+}
+.text {
+  background-color: #e91e63;
+    color: white;
+    font-size: 16px;
+    padding: 10px 18px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.card-img{
+		-webkit-transition: .5s;
+		-o-transition: .5s;
+		transition: .5s
+}
+.content:hover .card-img{
+	opacity: .4;
+}
+			/*========================
+          		END	MIXITOP SECTION
+          	========================*/		
+	/*========================
+          FOOTER SECTION
+       ========================*/
+#contact{
+	background: #173b6c;
+}
+.is-valid{
+	border-color: #e91e63!important;
+ 	-webkit-box-shadow:  0px 0px 4px 2px #FF0000!important;
+ 	        box-shadow:  0px 0px 4px 2px white!important;
+}
+
+::-webkit-input-placeholder{
+	font-weight: 600;
+}
+::-moz-placeholder{
+	font-weight: 600;
+}
+:-ms-input-placeholder{
+	font-weight: 600;
+}
+::-ms-input-placeholder{
+	font-weight: 600;
+}
+::placeholder{
+	font-weight: 600;
+}
+.clip-path{	
+-webkit-clip-path: polygon(52% 40%, 0 16%, 100% 17%);	
+      clip-path: polygon(52% 40%, 0 16%, 100% 17%);
+    background:white;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -35px;
+    right: 0;
+    left: 0;
+    margin: auto;		
+}
+input[type="submit"]{
+background-image: linear-gradient( 99deg,  rgba(255,166,0,1) 14.7%, rgba(255,99,97,1) 73% );
+padding: 10px 22px;
+    border: none;
+	font-weight: 500;
+	color: white
+	
+}
+[type="submit"]:hover{	
+	color: #173b6c;
+}
+.social-footer{
+	border-top: 1px solid white;
+	color: white
+}
+.social-footer>i{
+	padding: 12px 15px;
+    font-size: 38px;
+}
+.pro-border{
+	background: #e91e63;
+	width: 540px;
+	margin: auto;
+	height: 2px;
+}
+		/*========================
+            END FOOTER SECTION
+        ========================*/
+			
