@@ -1,1 +1,1 @@
-https://anwarahmed24.github.io/anwar24.com
+https://anwarahmed24.github.io/Anwar24.com
